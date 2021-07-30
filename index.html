@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="dns-prefetch" href="https://shadertoy.com">
+  </head>
+  <body>
+    <div id="app" class="container">
+      
+      <canvas id="main-canvas"></canvas>
+
+      
+      <div id="preloader">
+        <div id="preloader-context">
+          <div id="preloader-text">Now Loading (0%)</div>
+        </div>
+      </div>
+
+
+      <div id="prompt">
+        <div id="prompt--bg"></div>
+        <div id="prompt--box">
+          <div id="prompt--msg">Error message here!</div>
+          <input type="text" id="prompt--input"/> <button id="prompt--ok-btn" class="button-default prompt--button prompt--button__is-ok" aria-label="Ok">OK</button> 
+        </div>
+      </div>
+      
+    </div>
+    <script src="assets/js/index.js"></script> 
+  </body>
+</html>
