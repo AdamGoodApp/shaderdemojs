@@ -25383,12 +25383,7 @@
    80: [ function(e, t, n) {
        "use strict";
        var r = e("../core/settings"), i = e("../core/browser"), o = e("../utils/math"), a = e("../helpers/webXRHelper");
-       n.preInit = function() {
-           (s = new Audio("".concat(r.AUDIO_PATH, "bgm.mp3"))).volume = 0, s.loop = !0, l = [ "tap-1", "tap-2" ].map(function(e) {
-               var t = new Audio("".concat(r.AUDIO_PATH).concat(e, ".mp3"));
-               return t.volume = 0, t;
-           });
-       }, n.init = function() {
+       n.preInit = function() {}, n.init = function() {
            (h = i.isMobile && !i.isVRBrowser) || document.addEventListener("click", f, {
                once: !0
            });
@@ -25418,9 +25413,7 @@
                var t = c ? 1 : -1;
                u = o.staturate(u + e * t);
            }
-           s.volume = u, l.forEach(function(e) {
-               e.volume = u;
-           });
+           
        };
        var s, l, c = !1, u = 0, h = !1, d = 0, p = !1;
        function f() {}
